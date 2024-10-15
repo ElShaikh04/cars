@@ -1,0 +1,130 @@
+/* Body and container styles */
+body {
+  background-image: url("./assets/img/bkgd"); /* Set background image */
+  background-size: cover; /* Cover the entire screen */
+  background-repeat: no-repeat; /* Prevent repetition of the image */
+  background-attachment: fixed; /* Fix the background to prevent scrolling */
+  font-family: 'Open Sans', sans-serif;
+  color: #2e4053;
+}
+
+.container {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  font-size: 2.8rem;
+  color: #34495e;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2e4053;
+}
+
+.table th {
+  background-color: #3498db; /* Example: Blue header */
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.table td {
+  background-color: #f7f9fb;
+  transition: background-color 0.3s ease;
+}
+
+.table td a {
+  color: #2980b9;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block; /* Allow centering of the button */
+  margin: 0 auto; /* Center the button horizontally */
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.table td a:hover {
+  background-color: #d6eaf8;
+  color: #21618c;
+}
+
+/* Button styles */
+.btn-danger {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+
+.btn-primary {
+  background-color: #3498db; /* Blue color */
+  border-color: #3498db;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9; /* Darker blue color */
+  border-color: #2980b9;
+}
+
+/* Custom dashboard layout */
+.container h1 {
+  font-size: 2.8rem;
+  color: #2e4053;
+}
+
+.container table {
+  margin-top: 20px;
+}
+
+.container table td {
+  color: #34495e;
+  font-weight: 600;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+      margin-top: 20px;
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  .table th, .table td {
+      padding: 10px;
+      font-size: 1rem;
+  }
+}
